@@ -16,7 +16,7 @@ In this project, a cellular automata based Schelling's model of segregation was 
     <img src = "./figures/schelling_model.png" width="80%">
 </p>
 
-
+The red square is the house lived by red race, the blue square is the house lived by blue race, and the white square is the empty house. The algorithm details could be found [here](https://classes.cs.uchicago.edu/current/12100-1/pa/pa2/index.html).
 
 ## Dependencies
 

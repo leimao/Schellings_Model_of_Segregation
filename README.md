@@ -39,9 +39,6 @@ The red square is the house lived by red race, the blue square is the house live
 └── Simulation.hs
 ```
 
-
-## Features
-
 ## Usage
 
 ### Installation
@@ -111,13 +108,15 @@ B R R R O R R O R R
 
 ### Adjust Parameters
 
-**R-size**
+**R-size**: The size of neighborhood. This could be adjusted before each simulation.
 
-The size of neighborhood. This could be adjusted before each simulation.
+**Threshold**: Satisfaction threshold. This could be adjusted at anytime during the simulation.
 
-**Threshold**
+## Demo
 
-Satisfaction threshold. This could be adjusted at anytime during the simulation.
+Before Simulation | After Simulation 
+:-------------------------:|:-------------------------:
+![](figures/simulation_bf.png)  |  ![](figures/simulation_af.png) 
 
 ## Notes
 

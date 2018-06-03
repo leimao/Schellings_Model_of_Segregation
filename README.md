@@ -13,7 +13,7 @@ In 1971, the American economist [Thomas Schelling](https://en.wikipedia.org/wiki
 In this project, a cellular automata based Schelling's model of segregation was implemented using Haskell.
 
 <p align="center">
-    <img src = "./figures/shelling_model.png" width="80%">
+    <img src = "./figures/schelling_model.png" width="80%">
 </p>
 
 

@@ -62,8 +62,8 @@ $ ./Main max_steps grid_size red_percentage blue_percentage empty_percentage
 
 * ``max_steps`` (integer) is the maximum number of steps the user wants to simulate. 
 * ``grid_size`` (integer) is the number of rows/columns for the square grid (5 ≤ ``grid_size`` ≤ 15).
-* ``red_percentage`` and ``blue_percentage`` (integer) are the percentage of race ratio of red and blue. The sum of these two numbers has to be 100.
-* ``empty_percentage``
+* ``red_percentage`` and ``blue_percentage`` (integer) are the percentage of race ratio of red and blue. The sum of these two numbers has to be 100 (0 ≤ ``red_percentage`` ≤ 100, 0 ≤ ``blue_percentage`` ≤ 100).
+* ``empty_percentage`` (integer) is the percentage of empty houses on the grids (0 ≤ ``empty_percentage`` ≤ 100).
 
 
 ### Start Simlulation from Saved State

@@ -114,6 +114,8 @@ B R R R O R R O R R
 
 ## Demo
 
+This is a simulation of a random 15 × 15 grids.
+
 Before Simulation | After Simulation 
 :-------------------------:|:-------------------------:
 ![](figures/simulation_bf.png)  |  ![](figures/simulation_af.png) 

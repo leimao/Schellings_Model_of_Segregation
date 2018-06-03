@@ -75,6 +75,31 @@ $ ./Main max_steps grid.txt red_percentage blue_percentage empty_percentage
 ```
 In this case, ``red_percentage``, ``blue_percentage``, and ``empty_percentage`` would be automatically inferred from ``grid.txt`` and the value user provided would not count.
 
+The valid format for the file should look like the following:
+```
+NRows 
+NCols 
+DATA 
+```
+The first line should specify the number of rows in the grid (NRows).
+The second line shoud specify the number of columns in the grie (NCols).
+The third line (and beyond) will contains lines, where in each line (a row) should only contain "B", "R", or "O" (Empty) to represent the homeowners (i.e. columns). For each line, these homeowners values will be seperate by whitespace.
+
+The following is an example of a valid grid configuration file:
+```
+10
+10
+R R O R R R R O R R
+O B B B O O B B B O
+R R R R B B B B O B
+B B B O B B B B O B
+B R R R O B B B O B
+B R R R O R R O R R
+B R R R O R R O R R
+B R R R O R R O R R
+B R R R O R R O R R
+B R R R O R R O R R
+```
 
 
 ## Notes
@@ -92,70 +117,3 @@ $ cabal install gloss
 
 The program was implemented with consideration of rectangular rectangles and arbitrarily sized grids. This restrictions could be removed in the ``Main.hs`` file.
 
-
-
-
-This is a simple editor for [PPM](https://en.wikipedia.org/wiki/Netpbm_format) formatted images written in Haskell. It supports negate R/G/B, gray scale, edge detection, and sharpen. The processing of image might be somewhat slower compared to similar editors written in other language (due to implementation in Haskell).
-
-Sample PPM formatted file:
-
-```
-P3
-4 4
-255
-0  0  0   100 0  0       0  0  0    255   0 255
-0  0  0    0 255 175     0  0  0     0    0  0
-0  0  0    0  0  0       0 15 175    0    0  0
-255 0 255  0  0  0       0  0  0    255  255 255
-```
-## Features
-
-### Negate R/G/B
-
-R' = MaxValue - R
-
-G' = MaxValue - G
-
-B' = MaxValue - B
-
-In general, MaxValue = 255
-
-### Gray Scale
-
-R' = (R + G + B) / 3
-
-G' = (R + G + B) / 3
-
-B' = (R + G + B) / 3
-
-### Edge Detection and Sharpen 
-
-Use [2D convolutions](http://www.songho.ca/dsp/convolution/convolution2d_example.html) and [kernels](https://en.wikipedia.org/wiki/Kernel_(image_processing)).
-
-
-## Dependencies
-
-* GHC 8.4.2
-* [Gloss 1.12.0.0](https://hackage.haskell.org/package/gloss)
-
-
-## Usage
-
-### Installation
-
-To install the program, run the following command in the shell:
-
-```bash
-$ make
-```
-
-### Start Program
-
-To start the program, run the following command in the shell and follow the instructions in the program:
-
-```bash
-$ ./Main
-```
-Multiple sequential actions is also allowed.
-
-## Demo

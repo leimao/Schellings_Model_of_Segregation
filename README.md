@@ -100,6 +100,23 @@ B R R R O R R O R R
 B R R R O R R O R R
 B R R R O R R O R R
 ```
+### Basic Operations
+
+**Space**
+Start/Pause/Resume the simulation.
+
+**s/b**
+Simulate step by step manually or automatically.
+
+**r**
+Reset the simulation.
+
+
+### Adjust Parameters
+
+**R-size**
+
+The size of neighborhood. This could be adjust
 
 
 ## Notes

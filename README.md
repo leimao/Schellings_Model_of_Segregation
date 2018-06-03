@@ -103,12 +103,15 @@ B R R R O R R O R R
 ### Basic Operations
 
 **Space**
+
 Start/Pause/Resume the simulation.
 
-**s/b**
+**S/B**
+
 Simulate step by step manually or automatically.
 
-**r**
+**R**
+
 Reset the simulation.
 
 

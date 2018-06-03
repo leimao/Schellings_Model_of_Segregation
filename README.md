@@ -77,13 +77,13 @@ In this case, ``red_percentage``, ``blue_percentage``, and ``empty_percentage`` 
 
 The valid format for the file should look like the following:
 ```
-NRows 
-NCols 
-DATA 
+NumRows 
+NumCols 
+Data 
 ```
-The first line should specify the number of rows in the grid (NRows).
-The second line shoud specify the number of columns in the grie (NCols).
-The third line (and beyond) will contains lines, where in each line (a row) should only contain "B", "R", or "O" (Empty) to represent the homeowners (i.e. columns). For each line, these homeowners values will be seperate by whitespace.
+The first line should specify the number of rows in the grid (``NumRows``).
+The second line shoud specify the number of columns in the grie (``NumCols``).
+The third line (and beyond) will contains lines, where in each line (a row) should only contain ``B``, ``R``, or ``O`` (Empty) to represent the homeowners (i.e. columns). For each line, these homeowners values will be seperate by whitespace.
 
 The following is an example of a valid grid configuration file:
 ```
@@ -102,25 +102,22 @@ B R R R O R R O R R
 ```
 ### Basic Operations
 
-**Space**
+**Space**: Start/Pause/Resume the simulation.
 
-Start/Pause/Resume the simulation.
+**S/B**: Simulate step by step manually or automatically.
 
-**S/B**
-
-Simulate step by step manually or automatically.
-
-**R**
-
-Reset the simulation.
+**R**: Reset the simulation.
 
 
 ### Adjust Parameters
 
 **R-size**
 
-The size of neighborhood. This could be adjust
+The size of neighborhood. This could be adjusted before each simulation.
 
+**Threshold**
+
+Satisfaction threshold. This could be adjusted at anytime during the simulation.
 
 ## Notes
 

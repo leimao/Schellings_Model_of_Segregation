@@ -116,6 +116,10 @@ B R R R O R R O R R
 
 This is a simulation of a random 15 × 15 grids.
 
+```bash
+$ ./Main 100 15 40 60 40
+```
+
 Before Simulation | After Simulation 
 :-------------------------:|:-------------------------:
 ![](figures/simulation_bf.png)  |  ![](figures/simulation_af.png) 
